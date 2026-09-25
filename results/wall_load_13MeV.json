@@ -1,0 +1,170 @@
+{
+  "created": "2026-09-24 14:56:25",
+  "config": {
+    "primary_csv": "Effective traks/primary_de_points_13_MeV.csv",
+    "secondary_csv": "Effective traks/secondary_de_points_13_MeV.csv",
+    "n_sim_protons": 10000,
+    "bins": [
+      100,
+      100,
+      100
+    ],
+    "beam": {
+      "sigma_y_mm": 3.33,
+      "sigma_z_mm": 2.66,
+      "peak_current_mA": 100.0,
+      "pulse_us": 100.0,
+      "rep_rate_Hz": 100.0,
+      "protons_per_pulse": 62415090744607.625,
+      "protons_per_second": 6241509074460762.0,
+      "duty_cycle": 0.009999999999999998,
+      "duty_ratio": 100.00000000000001,
+      "average_current_mA": 0.9999999999999999
+    },
+    "target": {
+      "diameter_mm": 50.0,
+      "speed_m_per_s": 167.0,
+      "n_pucks": 1,
+      "edge_margin_sigma": 5.0,
+      "radius_mm": 25.0
+    },
+    "units": "W/cm3",
+    "n_r": 400,
+    "n_phi": 720,
+    "output": "results/wall_load_13MeV",
+    "output_step_mm": null,
+    "mask_outside_target": true,
+    "chunksize": 2000000,
+    "cache_dir": ".voxel_cache",
+    "max_output_bins": 3000,
+    "save_dtype": "float32",
+    "compress": false,
+    "verbose": true
+  },
+  "beam": {
+    "protons_per_pulse": 62415090744607.625,
+    "protons_per_second": 6241509074460762.0,
+    "duty_cycle": 0.009999999999999998,
+    "duty_ratio": 100.00000000000001,
+    "average_current_mA": 0.9999999999999999,
+    "fwhm_y_mm": 7.841550749953061,
+    "fwhm_z_mm": 6.263821319782325
+  },
+  "motion": {
+    "speed_m_per_s": 167.0,
+    "sweep_mm": 16.7,
+    "edge_gap_mm": 16.65,
+    "edge_gap_sigma": 4.999999999999999,
+    "required_margin_mm": 16.65,
+    "max_speed_m_per_s": 167.00000000000006,
+    "axis": "y"
+  },
+  "rates": {
+    "rep_rate_Hz": 100.0,
+    "n_pucks": 1,
+    "hit_rate_Hz": 100.0,
+    "puck_duty_cycle": 0.009999999999999998,
+    "puck_duty_ratio": 100.00000000000001
+  },
+  "grids": {
+    "primary": {
+      "source": "Effective traks/primary_de_points_13_MeV.csv",
+      "n_rows": 1295275,
+      "sum_de_mev": 55876.53325603796,
+      "bins": [
+        100,
+        100,
+        100
+      ],
+      "voxel_size_mm": [
+        0.010997000336647078,
+        0.009766000211238857,
+        0.011000000238418628
+      ],
+      "voxel_volume_mm3": 1.1813638093229562e-06,
+      "extent_mm": {
+        "x": [
+          -0.5497000217437744,
+          0.550000011920929
+        ],
+        "y": [
+          -0.550000011920929,
+          0.42660000920295715
+        ],
+        "z": [
+          -0.550000011920929,
+          0.550000011920929
+        ]
+      }
+    },
+    "secondary": {
+      "source": "Effective traks/secondary_de_points_13_MeV.csv",
+      "n_rows": 2764,
+      "sum_de_mev": 722.75555334,
+      "bins": [
+        100,
+        100,
+        100
+      ],
+      "voxel_size_mm": [
+        0.010981000065803492,
+        0.006472999900579479,
+        0.0035869999229908023
+      ],
+      "voxel_volume_mm3": 2.549639987689939e-07,
+      "extent_mm": {
+        "x": [
+          -0.550000011920929,
+          0.5480999946594238
+        ],
+        "y": [
+          -0.46779999136924744,
+          0.17949999868869781
+        ],
+        "z": [
+          -0.13339999318122864,
+          0.22529999911785126
+        ]
+      }
+    }
+  },
+  "units": {
+    "surface": "W/cm2",
+    "volume": "W/cm3",
+    "linear": "W/cm",
+    "coordinates": "mm",
+    "angle": "rad"
+  },
+  "totals_units": "W (усреднение по обороту колеса, на одну болванку)",
+  "powers": {
+    "comment": "одна и та же энергия, разные интервалы усреднения; в картах и выгрузке используется per_puck_W",
+    "energy_per_pulse_J": 56.599287174078434,
+    "during_pulse_W": 565992.8717407844,
+    "per_period_W": 5659.928717407844,
+    "per_puck_W": 5659.928717407844
+  },
+  "totals": {
+    "primary": 5587.653164167622,
+    "secondary": 72.2755532402217,
+    "total_on_target": 5659.928717407844,
+    "total_before_mask": 5659.928761770435,
+    "expected_full": 5659.928880937795,
+    "outside_fraction": 2.8892580550277103e-08
+  },
+  "output_grid": {
+    "step_mm": 0.016666666666666666,
+    "dy_mm": 0.01666666666666572,
+    "dz_mm": 0.01666666666666572,
+    "shape": [
+      3001,
+      3001
+    ],
+    "auto_coarsened": true,
+    "n_r": 400,
+    "n_phi": 720
+  },
+  "peak_volumetric": 143834.05848639307,
+  "peak_volumetric_primary": 143834.05848639307,
+  "peak_volumetric_at_x_mm": 0.5445015117526054,
+  "runtime_s": 0.2970900535583496
+}
